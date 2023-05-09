@@ -2,9 +2,11 @@ const Images = [
 	{
 		uri: 'https://lh3.googleusercontent.com/p/AF1QipMfeojpM63DVnqA-5mUYCa3IVjvo4Wr0WyQqU8d=s1360-w1360-h1020'
 	},
-	{ uri: 'https://i.imgur.com/sNam9iJ.jpg' },
-	{ uri: 'https://i.imgur.com/sNam9iJ.jpg' },
-	{ uri: 'https://i.imgur.com/sNam9iJ.jpg' }
+	require('../../assets/Graduation hall.jpg'),
+	require('../../assets/Gymnasium .jpg'),
+	require('../../assets/Administration Building .jpg'),
+	require('../../assets/Student Union.jpg'),
+	require('../../assets/Cafteria.jpg')
 ]
 
 let markers = [
@@ -26,7 +28,7 @@ let markers = [
 		title: 'Graduation Hall',
 		id: '1',
 		description: 'This is Graduation hall',
-		image: Images[0]
+		image: Images[1]
 	},
 	{
 		coordinate: {
@@ -36,7 +38,7 @@ let markers = [
 		title: 'Gymnasium',
 		id: '2',
 		description: 'This is Gymnasium',
-		image: Images[0]
+		image: Images[2]
 	},
 	{
 		coordinate: {
@@ -46,7 +48,7 @@ let markers = [
 		title: 'Administration',
 		id: '3',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[3]
 	},
 	{
 		coordinate: {
@@ -56,7 +58,7 @@ let markers = [
 		title: 'Student Union',
 		id: '4',
 		description: 'This is Students Union ',
-		image: Images[0]
+		image: Images[4]
 	},
 	{
 		coordinate: {
@@ -66,7 +68,7 @@ let markers = [
 		title: 'Shops & Photocopy',
 		id: '5',
 		description: 'This is Shops and Photocopy services',
-		image: Images[0]
+		image: Images[5]
 	},
 	{
 		coordinate: {

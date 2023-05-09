@@ -82,11 +82,25 @@ const App = () => {
 			return
 		}
 
+		// const { coords } = await Location.getCurrentPositionAsync({})
+		// setLocation(coords)
+		// setPolylineCoordinates([coords])
+		// await Location.watchPositionAsync(
+		// 	{
+		// 		accuracy: Location.Accuracy.Highest,
+		// 		timeInterval: 5000,
+		// 		distanceInterval: 10
+		// 	},
+		// 	(newLocation) => {
+		// 		setPolylineCoordinates([...polylineCoordinates, newLocation.coords])
+		// 	}
+		// )
+
 		Location.watchPositionAsync(
 			{
 				accuracy: Location.Accuracy.High,
 				timeInterval: 1000,
-				distanceInterval: 4
+				distanceInterval: 1
 			},
 			(position) => {
 				// const { latitude, longitude } = position.coords
@@ -100,7 +114,6 @@ const App = () => {
 		)
 		// setLocation(location)
 	}
-
 	const interpolations = markerState.markers.map((marker, index) => {
 		const inputRange = [
 			(index - 1) * CARD_WIDTH,
