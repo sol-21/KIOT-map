@@ -2,11 +2,28 @@ const Images = [
 	{
 		uri: 'https://lh3.googleusercontent.com/p/AF1QipMfeojpM63DVnqA-5mUYCa3IVjvo4Wr0WyQqU8d=s1360-w1360-h1020'
 	},
-	require('../../assets/Graduation hall.jpg'),
-	require('../../assets/Gymnasium .jpg'),
-	require('../../assets/Administration Building .jpg'),
-	require('../../assets/Student Union.jpg'),
-	require('../../assets/Cafteria.jpg')
+	require('../../assets/Graduationhall.jpg'),
+	require('../../assets/Gymnasium.jpg'),
+	require('../../assets/AdministrationBuilding.jpg'),
+	require('../../assets/StudentUnion.jpg'),
+	require('../../assets/Shops.jpg'),
+	require('../../assets/BankandATM.jpg'),
+	require('../../assets/Cafteria.jpg'),
+	require('../../assets/InformaticsBuilding.jpg'),
+	require('../../assets/Whitehouse.jpg'),
+	require('../../assets/Whitehouse.jpg'),
+	require('../../assets/InformaticsLab.jpg'),
+	require('../../assets/RegistrarBuilding.jpg'),
+	require('../../assets/Maledormitory.jpg'),
+	require('../../assets/FemaleDormitory.jpg'),
+	require('../../assets/SportField.jpg'),
+	require('../../assets/Classroom.jpg'),
+	require('../../assets/TeachersLounge.jpg'),
+	require('../../assets/StudentsLounge.jpg'),
+	require('../../assets/StudentsClinic.jpg'),
+	require('../../assets/Freshmanlibrary.jpg'),
+	require('../../assets/MainLibrary.jpg'),
+	require('../../assets/EngineeringLibrary.jpg')
 ]
 
 let markers = [
@@ -78,7 +95,7 @@ let markers = [
 		title: 'Bank & ATM',
 		id: '6',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[6]
 	},
 	{
 		coordinate: {
@@ -88,7 +105,7 @@ let markers = [
 		title: 'Cafeteria',
 		id: '7',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[7]
 	},
 	{
 		coordinate: {
@@ -98,7 +115,7 @@ let markers = [
 		title: 'Informatics College',
 		id: '8',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[8]
 	},
 	{
 		coordinate: {
@@ -108,7 +125,7 @@ let markers = [
 		title: 'White House',
 		id: '9',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[9]
 	},
 	{
 		coordinate: {
@@ -118,7 +135,7 @@ let markers = [
 		title: 'Ancharo',
 		id: '10',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[10]
 	},
 	{
 		coordinate: {
@@ -128,7 +145,7 @@ let markers = [
 		title: 'Informatics Laboratory',
 		id: '11',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[11]
 	},
 	{
 		coordinate: {
@@ -138,7 +155,7 @@ let markers = [
 		title: 'Registrar',
 		id: '12',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[12]
 	},
 	{
 		coordinate: {
@@ -148,7 +165,7 @@ let markers = [
 		title: 'Senior Males Dormitery',
 		id: '13',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[13]
 	},
 	{
 		coordinate: {
@@ -158,7 +175,7 @@ let markers = [
 		title: 'Female Dormitery',
 		id: '14',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[14]
 	},
 	{
 		coordinate: {
@@ -168,7 +185,7 @@ let markers = [
 		title: 'Sport Field',
 		id: '15',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[15]
 	},
 	{
 		coordinate: {
@@ -178,7 +195,7 @@ let markers = [
 		title: 'Class Rooms',
 		id: '16',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[16]
 	},
 	{
 		coordinate: {
@@ -188,7 +205,7 @@ let markers = [
 		title: 'Teachers Lounge',
 		id: '17',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[17]
 	},
 	{
 		coordinate: {
@@ -198,7 +215,7 @@ let markers = [
 		title: 'Students Lounge',
 		id: '18',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[18]
 	},
 	{
 		coordinate: {
@@ -208,7 +225,7 @@ let markers = [
 		title: 'Clinic',
 		id: '19',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[19]
 	},
 	{
 		coordinate: {
@@ -218,7 +235,7 @@ let markers = [
 		title: 'Informatics Library',
 		id: '20',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[20]
 	},
 	{
 		coordinate: {
@@ -228,7 +245,7 @@ let markers = [
 		title: 'Main Library',
 		id: '21',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[21]
 	},
 	{
 		coordinate: {
@@ -238,7 +255,7 @@ let markers = [
 		title: 'New Library',
 		id: '22',
 		description: 'This is Administration office',
-		image: Images[0]
+		image: Images[22]
 	}
 ]
 

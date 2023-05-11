@@ -1,11 +1,11 @@
 {
 	"expo": {
-		"name": "Kiot Map",
+		"name": "Kiot Maps",
 		"slug": "Kiot-Map",
-		"version": "1.0.0",
+		"version": "2.0.0",
 		"description": "this is kombolcha institute of technology map that help students to discovere locations",
 		"orientation": "portrait",
-		"icon": "./assets/icon.png",
+		"icon": "./assets/logo-transparent.png",
 		"userInterfaceStyle": "light",
 		"splash": {
 			"image": "./assets/kiot-splash-screen.png",
@@ -30,7 +30,12 @@
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#ffffff"
 			},
-			"package": "com.sol_17.KiotMap"
+			"package": "com.sol_17.KiotMap",
+			"permissions": [
+				"android.permission.ACCESS_COARSE_LOCATION",
+				"android.permission.ACCESS_FINE_LOCATION",
+				"android.permission.FOREGROUND_SERVICE"
+			]
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
@@ -39,6 +44,12 @@
 			"eas": {
 				"projectId": "17e310f7-78cc-467d-ba72-6ed0bb70b94d"
 			}
+		},
+		"runtimeVersion": {
+			"policy": "sdkVersion"
+		},
+		"updates": {
+			"url": "https://u.expo.dev/17e310f7-78cc-467d-ba72-6ed0bb70b94d"
 		}
 	}
 }

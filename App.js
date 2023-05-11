@@ -82,19 +82,19 @@ const App = () => {
 			return
 		}
 
-		// const { coords } = await Location.getCurrentPositionAsync({})
-		// setLocation(coords)
-		// setPolylineCoordinates([coords])
-		// await Location.watchPositionAsync(
-		// 	{
-		// 		accuracy: Location.Accuracy.Highest,
-		// 		timeInterval: 5000,
-		// 		distanceInterval: 10
-		// 	},
-		// 	(newLocation) => {
-		// 		setPolylineCoordinates([...polylineCoordinates, newLocation.coords])
-		// 	}
-		// )
+		const { coords } = await Location.getCurrentPositionAsync({})
+		setLocation(coords)
+		setPolylineCoordinates([coords])
+		await Location.watchPositionAsync(
+			{
+				accuracy: Location.Accuracy.Highest,
+				timeInterval: 5000,
+				distanceInterval: 10
+			},
+			(newLocation) => {
+				setPolylineCoordinates([...polylineCoordinates, newLocation.coords])
+			}
+		)
 
 		Location.watchPositionAsync(
 			{
@@ -103,16 +103,10 @@ const App = () => {
 				distanceInterval: 1
 			},
 			(position) => {
-				// const { latitude, longitude } = position.coords
-				// const newLocation = { latitude, longitude }
-				// setLocation(newLocation)
-				// const newCoordinates = [...polylineCoordinates, { latitude, longitude }]
-				// setPolylineCoordinates(newCoordinates)
 				setLocation(position.coords)
 				setPolylineCoordinates((coords) => [...coords, position.coords])
 			}
 		)
-		// setLocation(location)
 	}
 	const interpolations = markerState.markers.map((marker, index) => {
 		const inputRange = [
@@ -130,6 +124,7 @@ const App = () => {
 		return { scale }
 	})
 	const onListPressed = () => {}
+
 	const onMarkerPress = (markerID) => {
 		console.log(markerID)
 		setSelectedMarkerid(Number(markerID))

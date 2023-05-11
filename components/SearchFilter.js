@@ -34,14 +34,7 @@ const SearchFilter = ({
 								<TouchableOpacity
 									style={styles.listItem}
 									onPress={() => onMarkerPress(item.id)}
-									// mapRef.current.animateToRegion({
-									// 	latitude: item.coordinate.latitude,
-									// 	longitude: item.coordinate.longitude,
-									// 	latitudeDelta: region.latitudeDelta,
-									// 	longitudeDelta: region.longitudeDelta
-									// })
-
-									// onPress={(e) => onSearchResultPress(item.key, e)}
+									
 								>
 									<Text style={{ fontSize: 14, fontWeight: 'bold' }}>
 										{item.title}
